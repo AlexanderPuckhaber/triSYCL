@@ -76,7 +76,6 @@ jobs:
 
       - name: Install required packages
         run: |
-          wget -qO- https://apt.llvm.org/llvm-snapshot.gpg.key | sudo tee /etc/apt/trusted.gpg.d/apt.llvm.org.asc
           apt-get update
           apt-get install -y build-essential cmake g++ gdb git \
             libboost1.81-all-dev libgtkmm-3.0-dev librange-v3-dev \
